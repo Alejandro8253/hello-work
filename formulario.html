@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <fieldset>
+        <legend>Datos Personales</legend>
+    <form action="envioformulario.php" method="post">
+        <label for="cedula">Cédula:</label>
+        <input type="number" id="cedula" name="cedula" placeholder="digite su cédula"><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="digite su nombre"><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="digite su teléfono"><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="digite su dirección"><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="digite su correo electrónico"><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="ciudad">Ciudad de nacimiento:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="" disabled selected>Seleccione una ciudad</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+            <option value="barranquilla">Barranquilla</option>
+            <option value="cartagena">Cartagena</option>
+            <option value="bucaramanga">Bucaramanga</option>
+            <option value="cucuta">Cúcuta</option>
+        </select>
+        <br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+    </fieldset>
+</body>
+
+</html>
